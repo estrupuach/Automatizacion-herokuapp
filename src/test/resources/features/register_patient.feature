@@ -8,4 +8,6 @@ Feature: Herokuapp
   Scenario: Register Patient
     Given that Carlos needs register a new patient
     When he realizes the register from patient in the hospital administrative system
-    Then he validates the patient menssage in the window Datos guardados correctamente
+      |name|lastName|telephone|idType|id|
+      |Camilo |Cadavid |45d64962|Cédula de ciudadanía|9823964|
+    Then he validates the patient menssage in the window Datos guardados correctamente.

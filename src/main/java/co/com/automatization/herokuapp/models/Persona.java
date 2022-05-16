@@ -1,6 +1,6 @@
 package co.com.automatization.herokuapp.models;
 
-public class Doctor {
+public class Persona {
     private String name;
     private String lastName;
     private String telephone;

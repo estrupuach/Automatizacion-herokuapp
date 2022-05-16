@@ -9,5 +9,5 @@
       Given that Carlos needs register a new doctor
       When he realizes the register from doctor in the hospital administrative system
       |name|lastName|telephone|idType|id|
-      |Cristian |Avendaño |30045741|Pasaportes|10358965|
+      |Cristian |Avendaño |30045741|Pasaportes|103589965|
       Then he validates the doctor menssage in the window Datos guardados correctamente.

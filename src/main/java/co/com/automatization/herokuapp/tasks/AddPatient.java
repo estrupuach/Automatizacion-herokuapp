@@ -8,28 +8,29 @@ import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.SelectFromOptions;
 
-import static co.com.automatization.herokuapp.userinterfaces.AddDoctorPage.*;
+import static co.com.automatization.herokuapp.userinterfaces.AddPatientPage.*;
 
-public class AddDoctor implements Task {
+public class AddPatient implements Task {
     private Persona persona;
 
-    public AddDoctor(Persona persona) {
+    public AddPatient(Persona persona) {
         this.persona = persona;
     }
 
-    public static AddDoctor WithThe(Persona data) {
-        return Tasks.instrumented(AddDoctor.class, data);
+    public static AddPatient WithThe(Persona persona) {
+        return Tasks.instrumented(AddPatient.class, persona);
     }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Click.on(LINK_ADD_DOCTOR),
+                Click.on(LINK_ADD_PATIENT),
                 Enter.theValue(persona.getName()).into(INPUT_NAME),
                 Enter.theValue(persona.getLastName()).into(INPUT_LAST_NAME),
                 Enter.theValue(persona.getTelephone()).into(INPUT_TELEPHONE),
                 SelectFromOptions.byVisibleText(persona.getIdType()).from(SELECT_ID_TYPE),
                 Enter.theValue(persona.getId()).into(INPUT_ID),
+                Click.on(CHECK_PREPAID_HEALTH),
                 Click.on(BUTTON_SAVE)
         );
     }
