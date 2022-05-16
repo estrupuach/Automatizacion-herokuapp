@@ -8,4 +8,4 @@ Feature: Herokuapp
   Scenario: Schedule appointment
     Given that Carlos needs assits to the doctor
     When he realizes the schedule of appointment
-    Then he validates the menssage in the window Datos guardados correctamente
+    Then he validates the appointment menssage in the window Datos guardados correctamente

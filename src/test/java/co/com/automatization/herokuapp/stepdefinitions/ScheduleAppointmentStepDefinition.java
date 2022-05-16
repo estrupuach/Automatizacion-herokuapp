@@ -22,7 +22,7 @@ public class ScheduleAppointmentStepDefinition {
     public void heRealizesTheScheduleOfAppointment(){
     }
 
-    @Then("^he validates the menssage in the window Datos guardados correctamente$")
-    public void heValidatesTheMenssageInTheWindowDatosGuardadosCorrectamente(){
+    @Then("^he validates the appointment menssage in the window Datos guardados correctamente$")
+    public void heValidatesTheAppointmentMenssageInTheWindowDatosGuardadosCorrectamente(){
     }
 }

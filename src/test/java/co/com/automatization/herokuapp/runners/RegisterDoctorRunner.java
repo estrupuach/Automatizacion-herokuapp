@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions (features = "src/test/resources/features/register_doctor.feature",
         tags = "@ScenarioDoctor",
-        glue = "co.com.automatization.herokuapp.stepdefinitions.RegisterDoctorStepDefinition.class",
+        glue = "co.com.automatization.herokuapp.stepdefinitions",
         snippets = SnippetType.CAMELCASE )
 public class RegisterDoctorRunner {
 }

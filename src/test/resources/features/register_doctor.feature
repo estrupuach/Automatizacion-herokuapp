@@ -7,5 +7,5 @@
     @ScenarioDoctor
     Scenario: Register doctor
       Given that Carlos needs register a new doctor
-      When he realizes the register from same in the hospital administrative system
-      Then he validates the menssage in the window Datos guardados correctamente
+      When he realizes the register from doctor in the hospital administrative system
+      Then he validates the doctor menssage in the window Datos guardados correctamente

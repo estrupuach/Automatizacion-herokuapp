@@ -17,11 +17,11 @@ public class RegisterPatientStepDefinition {
     public void thatCarlosNeedsRegisterANewPatient(){
     }
 
-    @When("^he realizes the register from same in the hospital administrative system$")
-    public void heRealizesTheRegisterFromSameInTheHospitalAdministrativeSystem(){
+    @When("^he realizes the register from patient in the hospital administrative system$")
+    public void heRealizesTheRegisterFromPatientInTheHospitalAdministrativeSystem(){
     }
 
-    @Then("^he validates the menssage in the window Datos guardados correctamente$")
-    public void heValidatesTheMenssageInTheWindowDatosGuardadosCorrectamente(){
+    @Then("^he validates the patient menssage in the window Datos guardados correctamente$")
+    public void heValidatesThePatientMenssageInTheWindowDatosGuardadosCorrectamente(){
     }
 }
